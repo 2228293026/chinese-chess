@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+
+# Development
+.vite/
+*.log
+
+# Backup files
+*.bak
+*.orig
+
+# Test files
+test.html
+standalone.html
+
+# Temporary scripts
+apply_*.py
+fix_*.py
+inject_*.cjs
+replace_*.py
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
