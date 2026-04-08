@@ -1,6 +1,7 @@
 # Dependencies
 node_modules/
-package-lock.json
+
+# 注意：package-lock.json 需要提交以确保 CI/CD 依赖一致性
 
 # Build outputs
 dist/
