@@ -21,6 +21,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          clean: true
+
+      - name: Verify lock file
+        run: |
+          ls -la
+          if [ ! -f "package-lock.json" ]; then
+            echo "❌ package-lock.json not found!"
+            exit 1
+          fi
+          echo "✅ package-lock.json found"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
