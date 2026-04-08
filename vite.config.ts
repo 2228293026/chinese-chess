@@ -4,18 +4,14 @@ export default defineConfig({
   root: '.',
   server: {
     port: 3000,
-    open: true,
-    // 指定主 HTML 文件
-    fsServe: {
-      main: 'Main.html'
-    }
+    open: true
   },
   build: {
     outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
       input: {
-        main: './Main.html'
+        main: './index.html'
       }
     }
   },
